@@ -14,5 +14,5 @@ message Waypoint {
 }
 
 message Path {
-  repeated Waypoint waypoints = 1;
+  repeated Waypoint waypoint = 1;
 }
