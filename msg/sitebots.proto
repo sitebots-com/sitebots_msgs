@@ -2,15 +2,11 @@ syntax = "proto2";
 
 package sitebots;
 
-message UUID {
-  required string value = 1;
-}
-
 message Waypoint {
-  required float x = 1;
-  required float y = 2;
-  required UUID map = 3;
-  optional UUID uuid = 4;
+  optional string id = 1;
+  optional float x = 2;
+  optional float y = 3;
+  optional string map_id = 4;
 }
 
 message Path {
