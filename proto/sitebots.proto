@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package sitebots;
+
+message Waypoint {
+  optional string id = 1;
+  optional float x = 2;
+  optional float y = 3;
+  optional string map_id = 4;
+}
+
+message Path {
+  repeated Waypoint waypoint = 1;
+}

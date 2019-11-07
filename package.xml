@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sitebots_msgs</name>
+  <version>0.0.0</version>
+  <description>sitebots internal messages</description>
+
+  <maintainer email="info@sitebots.com">sitebots</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>std_msgs</depend>
+  <depend>mavros_msgs</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+  </export>
+</package>
