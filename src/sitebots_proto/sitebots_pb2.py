@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='sitebots.proto',
   package='sitebots',
   syntax='proto2',
-  serialized_pb=_b('\n\x0esitebots.proto\x12\x08sitebots\"<\n\x08Waypoint\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\",\n\x04Path\x12$\n\x08waypoint\x18\x01 \x03(\x0b\x32\x12.sitebots.Waypoint')
+  serialized_pb=_b('\n\x0esitebots.proto\x12\x08sitebots\"<\n\x08Waypoint\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\",\n\x04Path\x12$\n\x08waypoint\x18\x01 \x03(\x0b\x32\x12.sitebots.Waypoint\"9\n\x05State\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -108,9 +108,62 @@ _PATH = _descriptor.Descriptor(
   serialized_end=134,
 )
 
+
+_STATE = _descriptor.Descriptor(
+  name='State',
+  full_name='sitebots.State',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='sitebots.State.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='x', full_name='sitebots.State.x', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='y', full_name='sitebots.State.y', index=2,
+      number=3, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='map_id', full_name='sitebots.State.map_id', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=136,
+  serialized_end=193,
+)
+
 _PATH.fields_by_name['waypoint'].message_type = _WAYPOINT
 DESCRIPTOR.message_types_by_name['Waypoint'] = _WAYPOINT
 DESCRIPTOR.message_types_by_name['Path'] = _PATH
+DESCRIPTOR.message_types_by_name['State'] = _STATE
 
 Waypoint = _reflection.GeneratedProtocolMessageType('Waypoint', (_message.Message,), dict(
   DESCRIPTOR = _WAYPOINT,
@@ -125,6 +178,13 @@ Path = _reflection.GeneratedProtocolMessageType('Path', (_message.Message,), dic
   # @@protoc_insertion_point(class_scope:sitebots.Path)
   ))
 _sym_db.RegisterMessage(Path)
+
+State = _reflection.GeneratedProtocolMessageType('State', (_message.Message,), dict(
+  DESCRIPTOR = _STATE,
+  __module__ = 'sitebots_pb2'
+  # @@protoc_insertion_point(class_scope:sitebots.State)
+  ))
+_sym_db.RegisterMessage(State)
 
 
 # @@protoc_insertion_point(module_scope)

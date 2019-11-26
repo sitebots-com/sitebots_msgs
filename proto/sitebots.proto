@@ -12,3 +12,10 @@ message Waypoint {
 message Path {
   repeated Waypoint waypoint = 1;
 }
+
+message State {
+  optional string id = 1;
+  optional float x = 2;
+  optional float y = 3;
+  optional string map_id = 4;
+}
