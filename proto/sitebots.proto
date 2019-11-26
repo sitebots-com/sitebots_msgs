@@ -13,7 +13,7 @@ message Path {
   repeated Waypoint waypoint = 1;
 }
 
-message State {
+message Vehicle {
   optional string id = 1;
   optional float x = 2;
   optional float y = 3;
