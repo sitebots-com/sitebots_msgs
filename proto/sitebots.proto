@@ -19,3 +19,8 @@ message State {
   optional float y = 3;
   optional string map_id = 4;
 }
+
+message Task {
+  optional string id = 1;
+  optional string type = 2;
+}
