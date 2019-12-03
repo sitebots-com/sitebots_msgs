@@ -44,10 +44,11 @@ message Vehicle {
 }
 
 message MissionItem {
-  oneof item_oneof {
-    Path path = 1;
-    Area area = 2;
-  }
+  // oneof item_oneof {
+  Path path = 1;
+  Area area = 2;
+  Waypoint waypoint = 3;
+  // }
 }
 
 message Mission {
