@@ -9,6 +9,13 @@ message Waypoint {
   optional string map_id = 4;
 }
 
+message Connection {
+  optional string id = 1;
+  optional string source_waypoint = 2;
+  optional string target_waypoint = 3;
+  optional string map_id = 4;
+}
+
 message Path {
   repeated Waypoint waypoint = 1;
 }
@@ -18,6 +25,7 @@ message Vehicle {
   optional float x = 2;
   optional float y = 3;
   optional string map_id = 4;
+  optional Task current_task = 5;
 }
 
 message Task {
