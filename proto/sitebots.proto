@@ -1,47 +1,56 @@
-syntax = "proto2";
+syntax = "proto3";
 
 package sitebots;
 
 message Waypoint {
-  optional string id = 1;
-  optional float x = 2;
-  optional float y = 3;
-  optional string map_id = 4;
+  string id = 1;
+  float x = 2;
+  float y = 3;
+  string map_id = 4;
 }
 
 message Connection {
-  optional string id = 1;
-  optional string source_waypoint = 2;
-  optional string target_waypoint = 3;
-  optional string map_id = 4;
+  string id = 1;
+  string source_waypoint = 2;
+  string target_waypoint = 3;
+  string map_id = 4;
 }
 
 message Path {
-  repeated Waypoint waypoint = 1;
+  string id = 1;
+  repeated Waypoint waypoint = 2;
 }
 
 message Area {
-  optional string name = 1;
-  optional string map_id = 2;
+  string id = 1;
+  string map_id = 2;
   repeated Point bounds = 3;
   repeated Point waypoints = 4;
+  string name = 5;
 }
 
 message Point {
-  optional float x = 1;
-  optional float y = 2;
-  optional string map_id = 3;
+  float x = 1;
+  float y = 2;
+  string map_id = 3;
 }
 
 message Vehicle {
-  optional string id = 1;
-  optional float x = 2;
-  optional float y = 3;
-  optional string map_id = 4;
-  optional Task current_task = 5;
+  string id = 1;
+  float x = 2;
+  float y = 3;
+  string map_id = 4;
+  Mission current_mission = 5;
 }
 
-message Task {
-  optional string id = 1;
-  optional string type = 2;
+message MissionItem {
+  oneof item_oneof {
+    Path path = 1;
+    Area area = 2;
+  }
+}
+
+message Mission {
+  string id = 1;
+  repeated MissionItem items = 2;
 }
