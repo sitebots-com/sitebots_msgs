@@ -13,6 +13,19 @@ message Path {
   repeated Waypoint waypoint = 1;
 }
 
+message Area {
+  optional string name = 1;
+  optional string map_id = 2;
+  repeated Point bounds = 3;
+  repeated Point waypoints = 4;
+}
+
+message Point {
+  optional float x = 1;
+  optional float y = 2;
+  optional string map_id = 3;
+}
+
 message Vehicle {
   optional string id = 1;
   optional float x = 2;
