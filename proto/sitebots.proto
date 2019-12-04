@@ -58,6 +58,6 @@ message Mission {
 
 message Request {
   string type = 1;
-  Point sout_west_bound = 2;
+  Point south_west_bound = 2;
   Point north_east_bound = 3;
 }
