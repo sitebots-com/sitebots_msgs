@@ -55,3 +55,9 @@ message Mission {
   string id = 1;
   repeated MissionItem items = 2;
 }
+
+message Request {
+  string type = 1;
+  Point sout_west_bound = 2;
+  Point north_east_bound = 3;
+}
