@@ -4,7 +4,7 @@ project(sitebots_msgs)
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
-  mavros_msgs
+  geometry_msgs
 )
 
 ## Generate messages in the 'msg' folder
@@ -39,7 +39,7 @@ catkin_python_setup()
 generate_messages(
   DEPENDENCIES
   std_msgs
-  mavros_msgs
+  geometry_msgs
 )
 
 ###################################
@@ -54,6 +54,6 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES vehicle-controller
-   CATKIN_DEPENDS std_msgs mavros_msgs
+   CATKIN_DEPENDS std_msgs geometry_msgs
 #  DEPENDS system_lib
 )
