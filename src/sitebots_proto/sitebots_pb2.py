@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='sitebots.proto',
   package='sitebots',
   syntax='proto3',
-  serialized_pb=_b('\n\x0esitebots.proto\x12\x08sitebots\"<\n\x08Waypoint\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\"Z\n\nConnection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x17\n\x0fsource_waypoint\x18\x02 \x01(\t\x12\x17\n\x0ftarget_waypoint\x18\x03 \x01(\t\x12\x0e\n\x06map_id\x18\x04 \x01(\t\"8\n\x04Path\x12\n\n\x02id\x18\x01 \x01(\t\x12$\n\x08waypoint\x18\x02 \x03(\x0b\x32\x12.sitebots.Waypoint\"u\n\x04\x41rea\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06map_id\x18\x02 \x01(\t\x12\x1f\n\x06\x62ounds\x18\x03 \x03(\x0b\x32\x0f.sitebots.Point\x12\"\n\twaypoints\x18\x04 \x03(\x0b\x32\x0f.sitebots.Point\x12\x0c\n\x04name\x18\x05 \x01(\t\"-\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\x0e\n\x06map_id\x18\x03 \x01(\t\"g\n\x07Vehicle\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\x12*\n\x0f\x63urrent_mission\x18\x05 \x01(\x0b\x32\x11.sitebots.Mission\"o\n\x0bMissionItem\x12\x1c\n\x04path\x18\x01 \x01(\x0b\x32\x0e.sitebots.Path\x12\x1c\n\x04\x61rea\x18\x02 \x01(\x0b\x32\x0e.sitebots.Area\x12$\n\x08waypoint\x18\x03 \x01(\x0b\x32\x12.sitebots.Waypoint\";\n\x07Mission\x12\n\n\x02id\x18\x01 \x01(\t\x12$\n\x05items\x18\x02 \x03(\x0b\x32\x15.sitebots.MissionItem\"m\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12)\n\x10south_west_bound\x18\x02 \x01(\x0b\x32\x0f.sitebots.Point\x12)\n\x10north_east_bound\x18\x03 \x01(\x0b\x32\x0f.sitebots.Pointb\x06proto3')
+  serialized_pb=_b('\n\x0esitebots.proto\x12\x08sitebots\"<\n\x08Waypoint\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\"Z\n\nConnection\x12\n\n\x02id\x18\x01 \x01(\t\x12\x17\n\x0fsource_waypoint\x18\x02 \x01(\t\x12\x17\n\x0ftarget_waypoint\x18\x03 \x01(\t\x12\x0e\n\x06map_id\x18\x04 \x01(\t\"8\n\x04Path\x12\n\n\x02id\x18\x01 \x01(\t\x12$\n\x08waypoint\x18\x02 \x03(\x0b\x32\x12.sitebots.Waypoint\"u\n\x04\x41rea\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0e\n\x06map_id\x18\x02 \x01(\t\x12\x1f\n\x06\x62ounds\x18\x03 \x03(\x0b\x32\x0f.sitebots.Point\x12\"\n\twaypoints\x18\x04 \x03(\x0b\x32\x0f.sitebots.Point\x12\x0c\n\x04name\x18\x05 \x01(\t\"-\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\x0e\n\x06map_id\x18\x03 \x01(\t\"g\n\x07Vehicle\x12\n\n\x02id\x18\x01 \x01(\t\x12\t\n\x01x\x18\x02 \x01(\x02\x12\t\n\x01y\x18\x03 \x01(\x02\x12\x0e\n\x06map_id\x18\x04 \x01(\t\x12*\n\x0f\x63urrent_mission\x18\x05 \x01(\x0b\x32\x11.sitebots.Mission\"o\n\x0bMissionItem\x12\x1c\n\x04path\x18\x01 \x01(\x0b\x32\x0e.sitebots.Path\x12\x1c\n\x04\x61rea\x18\x02 \x01(\x0b\x32\x0e.sitebots.Area\x12$\n\x08waypoint\x18\x03 \x01(\x0b\x32\x12.sitebots.Waypoint\";\n\x07Mission\x12\n\n\x02id\x18\x01 \x01(\t\x12$\n\x05items\x18\x02 \x03(\x0b\x32\x15.sitebots.MissionItem\"^\n\x06\x42ounds\x12)\n\x10south_west_bound\x18\x01 \x01(\x0b\x32\x0f.sitebots.Point\x12)\n\x10north_east_bound\x18\x02 \x01(\x0b\x32\x0f.sitebots.Pointb\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -414,30 +414,23 @@ _MISSION = _descriptor.Descriptor(
 )
 
 
-_REQUEST = _descriptor.Descriptor(
-  name='Request',
-  full_name='sitebots.Request',
+_BOUNDS = _descriptor.Descriptor(
+  name='Bounds',
+  full_name='sitebots.Bounds',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='type', full_name='sitebots.Request.type', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='south_west_bound', full_name='sitebots.Request.south_west_bound', index=1,
-      number=2, type=11, cpp_type=10, label=1,
+      name='south_west_bound', full_name='sitebots.Bounds.south_west_bound', index=0,
+      number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='north_east_bound', full_name='sitebots.Request.north_east_bound', index=2,
-      number=3, type=11, cpp_type=10, label=1,
+      name='north_east_bound', full_name='sitebots.Bounds.north_east_bound', index=1,
+      number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -455,7 +448,7 @@ _REQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=685,
-  serialized_end=794,
+  serialized_end=779,
 )
 
 _PATH.fields_by_name['waypoint'].message_type = _WAYPOINT
@@ -466,8 +459,8 @@ _MISSIONITEM.fields_by_name['path'].message_type = _PATH
 _MISSIONITEM.fields_by_name['area'].message_type = _AREA
 _MISSIONITEM.fields_by_name['waypoint'].message_type = _WAYPOINT
 _MISSION.fields_by_name['items'].message_type = _MISSIONITEM
-_REQUEST.fields_by_name['south_west_bound'].message_type = _POINT
-_REQUEST.fields_by_name['north_east_bound'].message_type = _POINT
+_BOUNDS.fields_by_name['south_west_bound'].message_type = _POINT
+_BOUNDS.fields_by_name['north_east_bound'].message_type = _POINT
 DESCRIPTOR.message_types_by_name['Waypoint'] = _WAYPOINT
 DESCRIPTOR.message_types_by_name['Connection'] = _CONNECTION
 DESCRIPTOR.message_types_by_name['Path'] = _PATH
@@ -476,7 +469,7 @@ DESCRIPTOR.message_types_by_name['Point'] = _POINT
 DESCRIPTOR.message_types_by_name['Vehicle'] = _VEHICLE
 DESCRIPTOR.message_types_by_name['MissionItem'] = _MISSIONITEM
 DESCRIPTOR.message_types_by_name['Mission'] = _MISSION
-DESCRIPTOR.message_types_by_name['Request'] = _REQUEST
+DESCRIPTOR.message_types_by_name['Bounds'] = _BOUNDS
 
 Waypoint = _reflection.GeneratedProtocolMessageType('Waypoint', (_message.Message,), dict(
   DESCRIPTOR = _WAYPOINT,
@@ -534,12 +527,12 @@ Mission = _reflection.GeneratedProtocolMessageType('Mission', (_message.Message,
   ))
 _sym_db.RegisterMessage(Mission)
 
-Request = _reflection.GeneratedProtocolMessageType('Request', (_message.Message,), dict(
-  DESCRIPTOR = _REQUEST,
+Bounds = _reflection.GeneratedProtocolMessageType('Bounds', (_message.Message,), dict(
+  DESCRIPTOR = _BOUNDS,
   __module__ = 'sitebots_pb2'
-  # @@protoc_insertion_point(class_scope:sitebots.Request)
+  # @@protoc_insertion_point(class_scope:sitebots.Bounds)
   ))
-_sym_db.RegisterMessage(Request)
+_sym_db.RegisterMessage(Bounds)
 
 
 # @@protoc_insertion_point(module_scope)

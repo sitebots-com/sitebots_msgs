@@ -57,6 +57,7 @@ message Mission {
 }
 
 message Bounds {
-  Point south_west_bound = 1;
-  Point north_east_bound = 2;
+  Point bottom_left = 1;
+  Point top_right = 2;
+  string map_id = 3;
 }
