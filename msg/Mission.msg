@@ -1,0 +1,2 @@
+string id
+MissionItem[] items

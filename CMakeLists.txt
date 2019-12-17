@@ -17,6 +17,15 @@ add_message_files(
   Edge.msg
 	Node.msg
   GeometryGraph.msg
+  Area.msg
+  Bounds.msg
+  Connection.msg
+  Mission.msg
+  MissionItem.msg
+  Path.msg
+  Point.msg
+  Vehicle.msg
+  Waypoint.msg
 )
 
 ## Generate services in the 'srv' folder

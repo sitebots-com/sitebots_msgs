@@ -1,0 +1,2 @@
+string id
+Waypoint[] waypoints
